@@ -1,0 +1,89 @@
+.navbar-minimal {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.85rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* .navbar-links li {
+  
+} */
+
+.navbar-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+  color: #4a90e2;
+  outline: none;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.logout-button:hover,
+.logout-button:focus {
+  color: #4a90e2;
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+  .navbar-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,102 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root, .auth-page {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.auth-container {
+  max-width: 400px;
+  width: 100%;
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 0.25rem;
+  box-sizing: border-box;
+}
+
+.primary-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: 700;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+  background-color: #357abd;
+  outline: none;
+}
+
+.form-error {
+  color: #b00020;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.auth-footer {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.secondary-link {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.3rem;
+}
+
+.secondary-link:hover,
+.secondary-link:focus {
+  text-decoration: underline;
+  outline: none;
+}
